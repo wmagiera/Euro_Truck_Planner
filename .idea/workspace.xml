@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Euro_Truck_Planner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="ver 1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +13,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/wmagiera/Euro_Truck_Planner",
+    "accountId": "05491515-a25b-4aa0-aade-ba15d9701b1a"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -51,6 +51,27 @@
       <option name="presentableId" value="Default" />
       <updated>1780475294148</updated>
     </task>
+    <task id="LOCAL-00001" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1780477974587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1780477974588</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1780477992767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780477992767</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ver 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.0" />
   </component>
 </project>
