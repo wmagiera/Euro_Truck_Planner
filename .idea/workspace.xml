@@ -4,37 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="ver 1.0" />
+    <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="ver 1.0">
+      <change afterPath="$PROJECT_DIR$/game_data/SII_Decrypt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/SII_Decrypt.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/city_completion.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/company_points.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/completed_routes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/game_time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/save_files/save_69261.sii" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/save_files/save_69786.sii" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/scs_extractor.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pliki_save.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pliki_scs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/wmagiera/Euro_Truck_Planner",
-    "accountId": "05491515-a25b-4aa0-aade-ba15d9701b1a"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wmagiera&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wmagiera/Euro_Truck_Planner&quot;,
+    &quot;accountId&quot;: &quot;05491515-a25b-4aa0-aade-ba15d9701b1a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3EcQHtj0WOmzIYoRh5W62v1FwGO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pliki_save.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780477992767</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1780478115378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780478115378</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1780478225999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780478225999</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
