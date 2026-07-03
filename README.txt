@@ -1,27 +1,26 @@
 Wczytywanie danych z plików save
-Mapa połączeń (odległości)
+Mapa połączeń (odległości) - potem
 
-Planner A_1: (Quick)
-Usuń punkty w których już byłem
-Usuń z listy dostępnych towarów te, które już przewiozłem
-Na bazie pliku z przejechanymi trasami znajduj miasta od najnowszego odwiedzonego.
-Dla danego miasta:
-- przygotuj zakazane połączenia (A->B)
-- obsłużone już towary
-W najstarszym pliku save znajdź trasy, które są z odwiedzonego miasta do nowego punktu,
-wskaż najkrótszą.
+Planner A: (Z current city do nowego punktu)
+# Usuń trasy z / do punktów w których już byłem
+# Usuń trasy przewożące produkty z / do, które już dla danej firmy są przewiezione
+Wypisz wszystkie trasy, z current city
+# Po wybraniu, skopiuj do nowego pliku save_game opis trasy i podmień w katalogu z zapisami
 
-Planner B:
-Usuń punkty w których już byłem
-Usuń z listy dostępnych towarów te, które już przewiozłem
-Podaj miasto początkowe (dowolne)
-Podaj miasto końcowe (na bazie mapy połączeń)
+Planner B: (Z pośród dostępnych tras znajdź najkrótszą do nowego miasta jako quick route)
+# Usuń trasy z / do punktów w których już byłem
+# Usuń trasy przewożące produkty z / do, które już dla danej firmy są przewiezione
+Zostaw trasy ze znanego miasta do nowego miasta.
+Posortuj po długości trasy.
+Wybierz najkrótszą.
+# Po wybraniu, skopiuj do nowego pliku save_game opis trasy i podmień w katalogu z zapisami
 
 
 TODO w Polsce
 Plik pliki_scs.py
-Wczytywanie danych z plików scs
-Tam są dane o rodzajach cargo, naczepach, co która firma akceptuje
+1. Wczytywanie danych z plików scs
+2. Tam są dane o rodzajach cargo, naczepach, co która firma akceptuje
+3. Tłumaczenie naczep z tego co w plikach available na to, co w pliku company cargo io
 
 TODO w Polsce
 Plik pliki_save.py

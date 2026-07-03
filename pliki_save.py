@@ -1,6 +1,8 @@
 import re
 import pandas as pd
 
+import funkcje_pomocnicze as fp
+
 ###################
 # TODO
 # origin_save_file - nazwa pliku save
@@ -86,17 +88,65 @@ def aktualizuj_city_completion(company_points_file, completed_routes_file, city_
     completed = pd.read_csv(completed_routes_file)
 
     points_grouped = points.groupby('city').count().rename(columns={'company' : 'all_points'})
-    completed_from = completed[['company_from', 'city_from']].rename(columns={'company_from' : 'company',
-                                                                              'city_from' : 'city'})
-    completed_to = completed[['company_to', 'city_to']].rename(columns={'company_to' : 'company',
-                                                                        'city_to' : 'city'})
-    completed_all = pd.concat([completed_to, completed_from]).drop_duplicates()
+    #completed_from = completed[['company_from', 'city_from']].rename(columns={'company_from' : 'company',
+    #                                                                          'city_from' : 'city'})
+    #completed_to = completed[['company_to', 'city_to']].rename(columns={'company_to' : 'company',
+    #                                                                    'city_to' : 'city'})
+    #completed_all = pd.concat([completed_to, completed_from]).drop_duplicates()
+    completed_all = fp.completed_wyciagnij_wszystkie_punkty(completed)
     completed_grouped = completed_all.groupby('city').count().rename(columns={'company' : 'visited'})
     city_completion = pd.merge(points_grouped,completed_grouped,on='city',how='left').fillna(0)
     # merge tworzy dane float gdy jest NaN, więc zamieniam na int
     city_completion['visited'] = city_completion['visited'].astype(int)
     city_completion['unvisited'] = city_completion['all_points'] - city_completion['visited']
     city_completion = city_completion.drop(['all_points'],axis=1)
-    print(city_completion)
     city_completion.to_csv(city_completion_file)
 
+###################
+# save_file
+# available_file
+#
+# Wyciąga z save_file dane o wszystkich dostępnych trasach
+###################
+def available_z_pliku_save_do_pliku(save_file,available_file):
+    with open(save_file) as f:
+        text = f.read()
+    game_time = int(re.search(r'game_time: (\d+)',text).group(1))
+    companies_text = re.findall(r'company : company.volatile.([\s\S]*?)}',text)
+    companies = []
+    for c in companies_text:
+        company, city = re.search(r'(^.*)\.(.*) \{[\s\S]*',c).groups()
+        jobs = re.findall(r'job_offer\[.*',c)
+        for j in jobs:
+            companies.append({"game_time": game_time,
+                              "job_ID" : j.split(" ")[1],
+                              "company_from": company,
+                              "city_from" : city
+            })
+    companies_df = pd.DataFrame(companies)
+    jobs_text = re.findall(r'job_offer_data : ([\s\S]*?)}',text)
+    jobs = []
+    for j in jobs_text:
+        job_ID = re.search(r'(.*?) ',j).group(1)
+        shortest_distance_km = int(re.search(r'shortest_distance_km: (.*)',j).group(1))
+        if shortest_distance_km > 1:
+            company, city = re.search(r'target: "(.*?)\.(.*?)"',j).groups()
+            jobs.append({"job_ID": job_ID,
+                         "company_to": company,
+                         "city_to": city,
+                         "urgency": int(re.search(r'urgency: (.*)',j).group(1)),
+                         "shortest_distance_km": shortest_distance_km,
+                         "ferry_time": int(re.search(r'ferry_time: (.*)',j).group(1)),
+                         "ferry_price": int(re.search(r'ferry_price: (.*)',j).group(1)),
+                         "cargo": re.search(r'cargo: cargo\.(.*)',j).group(1),
+                         "company_truck": re.search(r'company_truck: (.*)',j).group(1),
+                         "trailer_variant": re.search(r'trailer_variant: (.*)',j).group(1),
+                         "trailer_definition": re.search(r'trailer_definition: (.*)',j).group(1),
+                         "units_count": int(re.search(r'units_count: (.*)',j).group(1)),
+                         "fill_ratio": int(re.search(r'fill_ratio: (.*)',j).group(1)),
+                         "trailer_place": re.search(r'trailer_place: (.*)',j).group(1)
+            })
+    jobs_df = pd.DataFrame(jobs)
+    available = pd.merge(companies_df, jobs_df, on='job_ID', how='right')
+    available.to_csv(available_file,index=False)
+    print(available_file)

@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pliki_scs
 import pliki_save
+import wyszukiwanie_trasy
 
 def main():
     WINDOWS_SAVE_FILE = Path(r"C:\Users\wlady\OneDrive\Dokumenty\Euro Truck Simulator 2\profiles\7661647A696572\save\quicksave\game.sii")
@@ -17,6 +18,7 @@ def main():
     COMPANY_POINTS_FILE = GAME_DATA / "company_points.csv"
     COMPLETED_FILE = GAME_DATA / "completed_routes.csv"
     CITY_COMPLETION_FILE = GAME_DATA / "city_completion.csv"
+    CURRENT_CITY_FILE = GAME_DATA / "current_city.txt"
 
     with open(GAME_TIME_FILE) as f:
         game_time = int(f.read())
@@ -32,23 +34,38 @@ def main():
         game_time = game_time_new
         with open(GAME_TIME_FILE,"w") as f:
             f.write(str(game_time))
-
     SAVE_FILE = SAVE_FILES_DIR / (SAVE_FILE_BEGIN + str(game_time) + SAVE_FILE_END)
+    AVAILABLE_BEGIN = "available_"
+    AVAILABLE_FILE = GAME_DATA / (AVAILABLE_BEGIN + str(game_time) + ".csv")
 
     ##################
     ## obsługa plików save
     ##################
     ## aktualizacja dostępnych punktów na mapie
     ##################
-    pliki_save.lista_company_points(SAVE_FILE,COMPANY_POINTS_FILE)
+    # pliki_save.lista_company_points(SAVE_FILE,COMPANY_POINTS_FILE)
     ##################
     ## aktualizacja dostępnych punktów na mapie
     ##################
-    pliki_save.aktualizuj_completed_routes(SAVE_FILE,COMPLETED_FILE)
+    # pliki_save.aktualizuj_completed_routes(SAVE_FILE,COMPLETED_FILE)
     ##################
     ## aktualizacja wykonania miast
     ##################
-    pliki_save.aktualizuj_city_completion(COMPANY_POINTS_FILE,COMPLETED_FILE,CITY_COMPLETION_FILE)
+    # pliki_save.aktualizuj_city_completion(COMPANY_POINTS_FILE,COMPLETED_FILE,CITY_COMPLETION_FILE)
+    ##################
+    ## pobranie available z najnowszego pliku
+    ##################
+    # pliki_save.available_z_pliku_save_do_pliku(SAVE_FILE,AVAILABLE_FILE)
+
+    ##################
+    ## planner A
+    ##################
+    #wyszukiwanie_trasy.planner_A(AVAILABLE_BEGIN,GAME_DATA,COMPLETED_FILE,CURRENT_CITY_FILE,game_time,SAVE_FILE)
+
+    ##################
+    ## planner B
+    ##################
+    wyszukiwanie_trasy.planner_B(AVAILABLE_BEGIN,GAME_DATA,COMPLETED_FILE,game_time,SAVE_FILE)
 
 if __name__ == "__main__":
     main()

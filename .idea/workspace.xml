@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="ver 1.0">
-      <change afterPath="$PROJECT_DIR$/game_data/SII_Decrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/SII_Decrypt.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/city_completion.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/company_points.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/completed_routes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/game_time.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/save_files/save_69261.sii" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/save_files/save_69786.sii" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/scs_extractor.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pliki_save.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pliki_scs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funkcje_pomocnicze.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/available_69261.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/available_69786.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_data/current_city.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wyszukiwanie_trasy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wyszukiwanie_trasy_funkcje.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pliki_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/pliki_save.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +114,19 @@
       <option name="project" value="LOCAL" />
       <updated>1780478225999</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1780573991712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780573991712</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ver 1.0" />
