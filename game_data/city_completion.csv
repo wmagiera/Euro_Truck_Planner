@@ -11,11 +11,12 @@ algeciras,0,6
 almaraz,0,1
 almeria,0,5
 alta,3,0
-amsterdam,0,4
+amsterdam,0,10
 ancona,0,7
 andenes,1,2
+antwerp,0,4
 argostoli,0,5
-arvidsjaur,0,3
+arvidsjaur,2,1
 athens,0,8
 bacau,0,1
 badajoz,0,5
@@ -27,7 +28,7 @@ bastia,0,6
 bayonne,0,2
 beja,0,1
 beograd,2,12
-bergen,0,5
+bergen,1,5
 berlin,0,7
 bern,0,7
 bialystok,0,4
@@ -39,7 +40,7 @@ bitola,0,4
 bodo,2,4
 bologna,0,7
 bonifacio,0,1
-bordeaux,0,9
+bordeaux,0,10
 borlange,4,3
 bourges,0,4
 brasov,0,6
@@ -47,7 +48,7 @@ bratislava,0,4
 bremen,0,6
 brest,0,6
 brno,1,3
-brussel,0,3
+brussel,0,6
 bucuresti,0,8
 budapest,2,2
 burgas,0,5
@@ -61,7 +62,7 @@ cambridge,0,3
 cardiff,0,3
 carlisle,0,3
 cassino,0,2
-catania,0,8
+catania,0,9
 catanzaro,0,5
 cernavoda,0,2
 chania,0,4
@@ -87,6 +88,7 @@ durres,0,2
 dusseldorf,0,6
 edinburgh,0,3
 edirne,0,8
+eindhoven,0,4
 el_ejido,0,1
 erfurt,0,4
 esbjerg,0,7
@@ -105,13 +107,13 @@ gedser,0,2
 geneve,0,5
 genova,0,6
 gijon,0,4
-glasgow,0,4
+glasgow,0,5
 golfech,0,1
 goteborg,0,10
 granada,2,1
 graz,4,3
 grimsby,0,3
-groningen,0,3
+groningen,0,8
 guarda,0,2
 hamar,1,4
 hamburg,0,5
@@ -124,7 +126,7 @@ hirtshals,0,1
 honningsvag,2,2
 huelva,0,4
 hunedoara,0,5
-iasi,0,6
+iasi,0,7
 innsbruck,0,4
 ioannina,0,3
 istanbul,0,8
@@ -147,11 +149,11 @@ katowice,2,2
 kaunas,0,7
 kavala,0,5
 kiel,0,5
-kiruna,3,3
+kiruna,4,2
 klagenfurt,0,7
 klaipeda,0,7
 kobenhavn,0,6
-kokkola,1,6
+kokkola,1,7
 koln,0,6
 koper,0,3
 kosice,0,4
@@ -176,7 +178,7 @@ lehavre,0,6
 leipzig,0,6
 lemans,0,8
 leon,0,4
-liege,0,4
+liege,0,7
 liepaja,0,6
 lile_rousse,0,1
 lille,0,3
@@ -195,7 +197,7 @@ loviisa,0,1
 lublin,2,2
 luga,0,4
 lulea,3,3
-luxembourg,0,4
+luxembourg,0,7
 lyon,0,5
 madrid,0,13
 magdeburg,0,6
@@ -230,7 +232,7 @@ niksic,0,2
 nis,0,8
 novi_sad,2,7
 novo_mesto,0,1
-nurnberg,0,9
+nurnberg,0,10
 nynashamn,0,1
 o_barco,0,2
 odense,0,6
@@ -258,7 +260,7 @@ patras,1,3
 pecs,0,3
 pernik,0,1
 pescara,0,8
-petersburg,0,12
+petersburg,0,13
 pirdop,0,2
 pitesti,0,6
 pleven,0,5
@@ -285,7 +287,7 @@ rijeka,0,5
 roma,0,10
 roscoff,0,2
 rostock,0,6
-rotterdam,0,4
+rotterdam,0,8
 rovaniemi,1,3
 ruse,0,6
 salamanca,0,5
@@ -295,7 +297,7 @@ santander,0,5
 sarajevo,2,2
 sassari,0,7
 setubal,0,3
-sevilla,0,9
+sevilla,0,10
 sheffield,0,4
 siauliai,0,4
 sines,0,5
@@ -323,11 +325,11 @@ tampere,0,6
 taranto,0,8
 targu_mures,0,4
 tarragona,0,3
-tartu,0,7
+tartu,0,8
 tekirdag,0,7
 terni,0,3
 teruel,0,1
-thessaloniki,0,8
+thessaloniki,0,9
 timisoara,0,6
 tirana,0,7
 torino,0,4
@@ -338,7 +340,7 @@ trelleborg,0,2
 trieste,0,1
 trikala,0,4
 tromso,2,4
-trondheim,4,3
+trondheim,4,4
 turku,0,6
 tuzla,1,5
 umea,2,5

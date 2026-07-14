@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec66611-31e6-444b-9959-f543e4d953b0" name="Changes" comment="ver 1.0">
-      <change afterPath="$PROJECT_DIR$/funkcje_pomocnicze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/available_69261.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/available_69786.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/current_city.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wyszukiwanie_trasy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wyszukiwanie_trasy_funkcje.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Euro_Truck_Planner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Euro_Truck_Planner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/SII_Decrypt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/SII_Decrypt.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/city_completion.csv" beforeDir="false" afterPath="$PROJECT_DIR$/game_data/city_completion.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/company_points.csv" beforeDir="false" afterPath="$PROJECT_DIR$/game_data/company_points.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/completed_routes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/game_data/completed_routes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/current_city.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game_data/current_city.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_data/game_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game_data/game_time.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pliki_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/pliki_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wyszukiwanie_trasy.py" beforeDir="false" afterPath="$PROJECT_DIR$/wyszukiwanie_trasy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wyszukiwanie_trasy_funkcje.py" beforeDir="false" afterPath="$PROJECT_DIR$/wyszukiwanie_trasy_funkcje.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +43,13 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/wmagiera/Euro_Truck_Planner&quot;,
-    &quot;accountId&quot;: &quot;05491515-a25b-4aa0-aade-ba15d9701b1a&quot;
+    &quot;accountId&quot;: &quot;732a5acc-55c1-45e9-84a6-57afd710a15b&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="3EcQHtj0WOmzIYoRh5W62v1FwGO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +60,8 @@
     &quot;Python.pliki_save.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -69,7 +72,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
       </set>
     </attachedChunks>
   </component>

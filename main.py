@@ -11,6 +11,8 @@ def main():
     MAIN_DIR = Path('.')
     GAME_DATA = MAIN_DIR / "game_data"
     SAVE_FILES_DIR = GAME_DATA / "save_files"
+    DECRYPT_FILE = MAIN_DIR / "SII_Decrypt.exe"
+    TMP_SAVE_FILE = MAIN_DIR / "save_tmp.sii"
 
     SAVE_FILE_BEGIN = "save_"
     SAVE_FILE_END = ".sii"
@@ -26,7 +28,8 @@ def main():
     ##################
     # dekodowanie nowego pliku save
     ##################
-    game_time_new = pliki_save.kopiuj_i_dekoduj_plik_save(WINDOWS_SAVE_FILE,SAVE_FILES_DIR,SAVE_FILE_BEGIN,SAVE_FILE_END)
+    game_time_new = pliki_save.kopiuj_i_dekoduj_plik_save(WINDOWS_SAVE_FILE,SAVE_FILES_DIR,SAVE_FILE_BEGIN,SAVE_FILE_END,DECRYPT_FILE,TMP_SAVE_FILE)
+    #game_time_new = 0
     ##################
     # aktualizacja game_time
     ##################
@@ -43,19 +46,19 @@ def main():
     ##################
     ## aktualizacja dostępnych punktów na mapie
     ##################
-    # pliki_save.lista_company_points(SAVE_FILE,COMPANY_POINTS_FILE)
+    pliki_save.lista_company_points(SAVE_FILE,COMPANY_POINTS_FILE)
     ##################
     ## aktualizacja dostępnych punktów na mapie
     ##################
-    # pliki_save.aktualizuj_completed_routes(SAVE_FILE,COMPLETED_FILE)
+    pliki_save.aktualizuj_completed_routes(SAVE_FILE,COMPLETED_FILE)
     ##################
     ## aktualizacja wykonania miast
     ##################
-    # pliki_save.aktualizuj_city_completion(COMPANY_POINTS_FILE,COMPLETED_FILE,CITY_COMPLETION_FILE)
+    pliki_save.aktualizuj_city_completion(COMPANY_POINTS_FILE,COMPLETED_FILE,CITY_COMPLETION_FILE)
     ##################
     ## pobranie available z najnowszego pliku
     ##################
-    # pliki_save.available_z_pliku_save_do_pliku(SAVE_FILE,AVAILABLE_FILE)
+    pliki_save.available_z_pliku_save_do_pliku(SAVE_FILE,AVAILABLE_FILE)
 
     ##################
     ## planner A
@@ -65,7 +68,7 @@ def main():
     ##################
     ## planner B
     ##################
-    wyszukiwanie_trasy.planner_B(AVAILABLE_BEGIN,GAME_DATA,COMPLETED_FILE,game_time,SAVE_FILE)
+    wyszukiwanie_trasy.planner_B(AVAILABLE_BEGIN,GAME_DATA,COMPLETED_FILE,game_time,SAVE_FILE,WINDOWS_SAVE_FILE)
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,5 @@
+import shutil
+
 import pandas as pd
 import os
 import re
@@ -125,7 +127,7 @@ def przygotuj_opis_trasy(r,game_time):
 # opis
 # save_file
 ###################
-def uzupelnij_plik_o_trase(naglowek,job_ID,opis,save_file,game_time):
+def uzupelnij_plik_o_trase(naglowek,job_ID,opis,save_file,game_time,WINDOWS_SAVE_FILE):
     with open(save_file) as f:
         text = f.read()
     game_time_file = int(re.search(r'game_time: (\d+)',text).group(1))
@@ -135,7 +137,7 @@ def uzupelnij_plik_o_trase(naglowek,job_ID,opis,save_file,game_time):
         ind = text.find("expiration_time:",ind+1)
         ind = text.find(" ",ind+1)
         ind2 = text.find("\n",ind+1)
-        text = text[:ind+1] + str(game_time + 10000) + text[ind2:]
+        text = text[:ind+1] + str(game_time + 15000) + text[ind2:]
         print("znaleziona trasa w aktualnym pliku")
     elif text.find(job_ID) > -1:
         # w najnowszym pliku jest już takie job_ID
@@ -160,4 +162,5 @@ def uzupelnij_plik_o_trase(naglowek,job_ID,opis,save_file,game_time):
     with open("tmp2.csv", "w") as f:
         f.write(text)
     ### TODO
+    dest = shutil.copyfile("tmp2.csv",WINDOWS_SAVE_FILE)
     # skopiować plik wynikowy do katalogu z save-ami

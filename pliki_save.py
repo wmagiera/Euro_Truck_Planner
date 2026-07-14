@@ -1,4 +1,6 @@
 import re
+import shutil
+import subprocess
 import pandas as pd
 
 import funkcje_pomocnicze as fp
@@ -16,8 +18,22 @@ import funkcje_pomocnicze as fp
 # Zmienia nazwę pliku na file_name_begin + game_time + file_name_end
 # Zwraca game_time (w main uzupełnić, że aktualizuje plik game_time.txt)
 ###################
-def kopiuj_i_dekoduj_plik_save(origin_save_file,destination,file_name_begin,file_name_end):
-    return 0
+def kopiuj_i_dekoduj_plik_save(origin_save_file,destination,file_name_begin,file_name_end,decrypt_file,tmp_save_file):
+    subprocess.run(
+        [
+            str(decrypt_file),
+            str(origin_save_file),
+            str(tmp_save_file)
+        ],
+        check=True
+    )
+    with open(tmp_save_file) as f:
+        text = f.read()
+    game_time = int(re.search(r'game_time: (\d+)',text).group(1))
+    game_time_file = destination / (file_name_begin + str(game_time) + file_name_end)
+    dest = shutil.copyfile(tmp_save_file,game_time_file)
+    tmp_save_file.unlink()
+    return game_time
 
 ###################
 # save_file - plik save, z którego mam pobrać listę punktów
